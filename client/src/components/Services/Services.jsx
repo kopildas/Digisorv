@@ -4,7 +4,7 @@ function Services() {
   return (
     <div className="flex flex-col h-auto bg-zinc-400 px-5 lg:px-16 py-5 lg:py-20">
       <div className="flex lg:items-center lg:justify-around flex-col md:flex-row bg-red-40 gap-2 md:gap-5">
-        <p className="archivo-black-regular text-slate-300 text-xl md:text-3xl bg-fuchsia-00 lg:text-6xl md:w-auto">
+        <p className="archivo-black-regular text-slate-300 text-xl md:text-3xl bg-fuchsia-00 lg:text-5xl md:w-auto">
           OUR SERVICES
         </p>
         <div className="w-auto bg-red-00  flex md:items-center md:justify-center">
@@ -18,8 +18,8 @@ function Services() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row w-full h-auto bg-red-00 mt-10 archivo-black-regular">
-        <div className="lg:w-1/3 h-96 lg:h-screen bg-fuchsia-00 flex flex-col md:flex-row lg:flex-col justify-center lg:items-end lg:justify-end gap-5 p-5">
+      <div className="flex flex-col lg:flex-row w-full h-auto bg-red-00 mt-[12rem] md:mt-10 lg:mt-10 archivo-black-regular">
+        <div className="lg:w-1/3 h-96 lg:h-auto bg-fuchsia-00 flex flex-col md:flex-row lg:flex-col justify-center lg:items-end lg:justify-end gap-5 p-5">
           <div className="lg:h-1/2 h-full md:w-96 bg-green-00 rounded-3xl border border-gray-700 slide-down-delay four col">
             <div class="box h-full rounded-3xl bg-red-00 flex flex-col p-5">
               <div className="w-full h-1/3 bg-green-00 flex items-center justify-between">
@@ -68,12 +68,12 @@ function Services() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/3 h-screen p-5 md:p-10 lg:p-5">
+        <div className="lg:w-1/3 h-auto p-5 md:p-10 lg:p-5">
           <div className="w-full h-full bg-green-200 rounded-3xl">
 
           </div>
         </div>
-        <div className="lg:w-1/3 h-96 lg:h-screen bg-fuchsia-00 flex flex-col md:flex-row  lg:flex-col justify-center lg:items-start lg:justify-start gap-5 p-5">
+        <div className="lg:w-1/3 h-96 lg:h-auto bg-fuchsia-00 flex flex-col md:flex-row  lg:flex-col justify-center lg:items-start lg:justify-start gap-5 p-5">
           <div className="lg:h-1/2 h-full md:w-96  bg-green-00 rounded-3xl border border-gray-700 slide-down-delay">
           <div class="box h-full rounded-3xl bg-red-00 flex flex-col p-5">
               <div className="w-full h-1/3 bg-green-00 flex items-center justify-between">
