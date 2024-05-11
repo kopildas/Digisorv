@@ -10,7 +10,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="z-10 bg-zinc-700 fixed w-full flex items-center justify-between px-10 py-5 order-b">
+    <nav className=" bg-zinc-700 fixed w-full flex items-center justify-between px-10 py-5 order-b z-50">
       {toggle_menu && <Toggle_menu toggle={toggle} />}
       <div className="w-full flex items-center justify-between bg-zinc-600 px-5 md:px-10 py-4 rounded-3xl">
         <div className="">
