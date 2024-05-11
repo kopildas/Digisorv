@@ -1,0 +1,19 @@
+.msg_box {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 28% 75%, 10% 100%, 15% 75%, 0% 75%);
+}
+.msg_box_2 {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 38% 75%, 15% 100%, 20% 75%, 0% 75%);
+}
+.msg_box_3 {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 40% 75%, 12% 100%, 20% 75%, 0% 75%);
+}
+.msg_box_4 {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 38% 75%, 15% 100%, 21% 75%, 0% 75%);
+}
+
+.msg_box,
+.msg_box_2,
+.msg_box_3,
+.msg_box_4 {
+  border-radius: 10px; /* Adjust the value for desired corner radius */
+}
