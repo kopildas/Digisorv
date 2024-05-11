@@ -1,0 +1,117 @@
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 750;
+  font-style: normal;
+}
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: anim 10s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 100px;
+}
+
+
+.circular-text-container {
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  font-size: 16px; /* Adjust as needed */
+  white-space: nowrap;
+}
+
+.letter:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(-90deg) translateX(100px);
+}
+
+.letter:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-60deg) translateX(100px);
+}
+
+/* Add styles for more letters as needed */
+
+
+.box {
+  display: block;
+  width: 100%;
+  /* height: 200px; */
+  overflow: hidden;
+  background-color: #bbb;
+  text-align: center;
+  position: relative;
+}
+
+.overlay{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* SLIDE DOWN DELAY */
+
+.slide-down-delay .overlay{
+  
+  background-color: rgba(117, 117, 117, 0.708);
+  line-height: 200px;
+  color: #fff;
+  transform: translateY(-100%);
+  -webkit-transition: transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+}
+
+.slide-down-delay .box:hover .overlay{
+  transform: translateY(0);
+}
+
+.slide-down-delay .overlay i{
+  transform: translateY(-80%);
+  opacity: 0;
+  -webkit-transition: transform 0.5s linear, opacity 0.5s linear 0.5s;
+  -o-transition: transform 0.5s linear, opacity 0.5s linear 0.5s;
+  transition: transform 0.5s linear, opacity 0.5s linear 0.5s;
+}
+
+.slide-down-delay .box:hover .overlay i{
+  transform: translateY(0);
+  opacity: 1;
+}
