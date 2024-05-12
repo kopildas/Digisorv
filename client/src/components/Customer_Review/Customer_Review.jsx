@@ -25,12 +25,12 @@ trust our  customer</p>
 
 
         <div className="flex gap-2 items-center bg-green-20 w-full">
-          <div className={`${id===1 ? "w-20 h-20" : "w-14 h-14"} rounded-full bg-slate-300`} onClick={() => setId(1)}>
+          <div className={`${id===1 ? "w-10 md:w-20 h-10 md:h-20" : "w-6 md:w-14 h-6 md:h-14"} rounded-full bg-slate-300`} onClick={() => setId(1)}>
           </div>
-          <div className={`${id===2 ? "w-20 h-20" : "w-14 h-14"} rounded-full bg-slate-300`} onClick={() => setId(2)}></div>
-          <div className={`${id===3 ? "w-20 h-20" : "w-14 h-14"} rounded-full bg-slate-300`} onClick={() => setId(3)}></div>
-          <div className={`${id===4 ? "w-20 h-20" : "w-14 h-14"} rounded-full bg-slate-300`} onClick={() => setId(4)}></div>
-          <div className={`${id===5 ? "w-20 h-20" : "w-14 h-14"} rounded-full bg-slate-300`} onClick={() => setId(5)}>
+          <div className={`${id===2 ? "w-10 md:w-20 h-10 md:h-20" : "w-6 md:w-14 h-6 md:h-14"} rounded-full bg-slate-300`} onClick={() => setId(2)}></div>
+          <div className={`${id===3 ? "w-10 md:w-20 h-10 md:h-20" : "w-6 md:w-14 h-6 md:h-14"} rounded-full bg-slate-300`} onClick={() => setId(3)}></div>
+          <div className={`${id===4 ? "w-10 md:w-20 h-10 md:h-20" : "w-6 md:w-14 h-6 md:h-14"} rounded-full bg-slate-300`} onClick={() => setId(4)}></div>
+          <div className={`${id===5 ? "w-10 md:w-20 h-10 md:h-20" : "w-6 md:w-14 h-6 md:h-14"} rounded-full bg-slate-300`} onClick={() => setId(5)}>
             <img src="https://i.ibb.co/CWz3tDy/premium-photo-1677368597077-009727e906db.jpg" alt="" className="w-full h-full rounded-full object-cover"/>
           </div>
         </div>
