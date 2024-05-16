@@ -18,7 +18,7 @@ function Services() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row w-full h-auto bg-red-00 mt-[12rem] md:mt-10 lg:mt-10 archivo-black-regular">
+      <div className="flex flex-col lg:flex-row w-full h-auto bg-red-00 mt-[12rem] md:mt-10 lg:mt-10 archivo-black-regular gap-5">
         <div className="lg:w-1/3 h-96 lg:h-auto bg-fuchsia-00 flex flex-col md:flex-row lg:flex-col justify-center lg:items-end lg:justify-end gap-5 p-5">
           <div className="lg:h-1/2 h-full md:w-96 bg-green-00 rounded-3xl border border-gray-700 slide-down-delay four col">
             <div class="box h-full rounded-3xl bg-red-00 flex flex-col p-5">
@@ -68,13 +68,13 @@ function Services() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/3 h-auto p-5 md:p-10 lg:p-5">
-          <div className="w-full h-full bg-green-200 rounded-3xl">
+        <div className="lg:w-1/3 w-full h-auto p-5 md:p-10 lg:p-5 bg-red-200 mt-[10rem] md:mt-0 hidden lg:block">
+          <div className="w-full h-20 md:h-full bg-green-200 rounded-3xl">
 
           </div>
         </div>
-        <div className="lg:w-1/3 h-96 lg:h-auto bg-fuchsia-00 flex flex-col md:flex-row  lg:flex-col justify-center lg:items-start lg:justify-start gap-5 p-5">
-          <div className="lg:h-1/2 h-full md:w-96  bg-green-00 rounded-3xl border border-gray-700 slide-down-delay">
+        <div className="lg:w-1/3 h-96 lg:h-auto bg-fuchsia-00 flex flex-col md:flex-row  lg:flex-col justify-center lg:items-start lg:justify-start gap-5 p-5 mt-[20rem] md:mt-0">
+          <div className="lg:h-1/2 h-full md:w-96 bg-green-00 rounded-3xl border border-gray-700 slide-down-delay">
           <div class="box h-full rounded-3xl bg-red-00 flex flex-col p-5">
               <div className="w-full h-1/3 bg-green-00 flex items-center justify-between">
                 <div className="w-24 h-24 bg-blue-200 rounded-full z-30"></div>
