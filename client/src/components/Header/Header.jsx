@@ -1,16 +1,40 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import Toggle_menu from "./Toggle_menu";
 import { useNavigate } from "react-router-dom";
 export default function Header() {
   const [toggle_menu, setToggle_menu] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+
   const navigate = useNavigate();
+
+  useEffect(() => {
+    
+    const handleScroll = () => {
+      const storedScrollY = localStorage.getItem("scrollY");
+      const scrollY = window.scrollY;
+      
+      if (storedScrollY > scrollY) {
+        localStorage.setItem("scrollY", scrollY); 
+        setIsHeaderVisible(true); // Show header when scrolling up
+      } else {
+        localStorage.setItem("scrollY", scrollY); 
+        setIsHeaderVisible(false); // Hide header when scrolling down
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   const toggle = () => {
     setToggle_menu(!toggle_menu);
   };
 
   return (
-    <nav className=" bg-zinc-700 fixed w-full flex items-center justify-between px-10 py-5 order-b z-50">
+    <nav className={`bg-zinc-00 fixed w-full flex items-center justify-between px-10 py-5 order-b z-50 transition duration-300 ease-in-out ${isHeaderVisible ? '' : 'opacity-0 transform -translate-y-full'}`}>
       {toggle_menu && <Toggle_menu toggle={toggle} />}
       <div className="w-full flex items-center justify-between bg-zinc-600 px-5 md:px-10 py-4 rounded-3xl">
         <div className="">
