@@ -5,6 +5,7 @@ import "./App.css";
 import { Footer } from "./components/Footer/Footer";
 import Transition from "./components/Page_transition/Transition";
 import { Page_Routes } from "./components/Page_transition/Page_Routes";
+import Header from "./components/Header/Header";
 
 function App() {
   localStorage.setItem("scrollY", 12);
