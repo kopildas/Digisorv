@@ -1,27 +1,23 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-import Home from "./page/Home/Home";
-import About from "./page/About/About";
-import Contact from "./page/Contact/Contact";
-import Header from "./components/Header/Header";
+
 import { Footer } from "./components/Footer/Footer";
+import Transition from "./components/Page_transition/Transition";
+import { Page_Routes } from "./components/Page_transition/Page_Routes";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  localStorage.setItem("scrollY", 12);
   return (
     <>
-      <Router>
-        {/* <Cursor scaling={scaling}/> */}
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer/>
-      </Router>
+      <Transition>
+        <Router>
+          {/* <Cursor scaling={scaling}/> */}
+          <Header />
+          <Page_Routes />
+          <Footer />
+        </Router>
+      </Transition>
     </>
   );
 }
