@@ -1,12 +1,12 @@
-import React from 'react'
-import Transition from '../../components/Page_transition/Transition'
+import React from "react";
+import Transition from "../../components/Page_transition/Transition";
 
-function Contact() {
+function Blog() {
   return (
     <Transition>
       <div className="w-full h-screen flex-col place-content-center">
         <div>
-          <p className="text-2xl">this is contact page</p>
+          <p className="text-2xl">this is blog page</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit
             tempora, nesciunt odio saepe amet repellat neque quasi facere quod
@@ -14,7 +14,7 @@ function Contact() {
           </p>
         </div>
         <div>
-          <p className="text-2xl">this is contact page</p>
+          <p className="text-2xl">this is blog page</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit
             tempora, nesciunt odio saepe amet repellat neque quasi facere quod
@@ -22,7 +22,7 @@ function Contact() {
           </p>
         </div>
         <div>
-          <p className="text-2xl">this is contact page</p>
+          <p className="text-2xl">this is blog page</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit
             tempora, nesciunt odio saepe amet repellat neque quasi facere quod
@@ -31,7 +31,7 @@ function Contact() {
         </div>
       </div>
     </Transition>
-  )
+  );
 }
 
-export default Contact
+export default Blog;
