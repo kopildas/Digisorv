@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@bsmnt/scrollytelling": "^0.3.3",
-    "framer-motion": "^11.1.7",
+    "framer-motion": "^11.2.4",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
