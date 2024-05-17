@@ -31,7 +31,7 @@ export default function Header() {
     setToggle_menu(!toggle_menu);
   };
 
-  return 
+  return (
       <nav
         className={`bg-zinc-00 fixed w-full flex items-center justify-between px-10 py-5 order-b z-50 transition duration-300 ease-in-out ${
           isHeaderVisible ? "" : "opacity-0 transform -translate-y-full"
