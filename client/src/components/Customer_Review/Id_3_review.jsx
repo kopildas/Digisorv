@@ -1,12 +1,19 @@
 import React from 'react'
+import { motion } from "framer-motion";
+import { fadeIn_2, springAnimation } from "../../variants.js";
 
 function Id_3_review() {
   return (
-    <div className='w-full h-80 bg-fuchsia-00'>
-      <div className='w-1/2 h-80 msg_box_3 bg-blue-400 ml-16 md:ml-28'>
+    <motion.div
+    variants={springAnimation("right", 0.1)}
+      initial = {{opacity:0, x:-50}}
+      whileInView={"show"}
+      viewport={{ once: true, amount: 0.7 }}
+    className='w-full h-80 bg-fuchsia-00'>
+      <div className='w-1/2 h-80 msg_box_3 bg-neutral-600 ml-16 md:ml-28'>
 
       </div>
-    </div>
+    </motion.div>
   )
 }
 
