@@ -17,7 +17,7 @@
 .text {
   width: 100%;
   height: 100%;
-  position: absolute;
+  /* position: absolute; */
   animation: anim 10s linear infinite;
 }
 
