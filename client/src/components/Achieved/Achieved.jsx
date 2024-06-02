@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { fadeIn_2, fadeIn, springAnimation } from "../../variants.js";
+import { AnimatedCounter } from './AnimatedCounter.jsx';
 
 function Achieved() {
   return (
@@ -11,7 +12,7 @@ function Achieved() {
         </div>
         <div className='flex flex-col lg:flex-row w-full h-auto p-5 md:p-20 mt-5 lg:mt-0 gap-5 lg:gap-0'>
           <div className='lg:w-1/3 h-96 border lg:border-r-0 rounded-3xl lg:rounded-none lg:rounded-bl-3xl lg:rounded-tl-3xl flex flex-col items-center justify-center lg:items-start lg:justify-start px-5 md:px-10  py-14 bg-red-00'>
-            <div className='md:text-9xl text-5xl font-semibold text-yellow-300'>40+</div>
+            <div className='md:text-9xl text-5xl font-semibold text-yellow-300'> <AnimatedCounter value={40} direction="up" delay={0.5}/>+</div>
             <div className='mt-5 bg-green-00'>
             <motion.p 
               variants={fadeIn_2("right",0.1)}
@@ -22,7 +23,7 @@ function Achieved() {
             </div>
           </div>
           <div className='lg:w-1/3 h-96 border rounded-3xl  lg:rounded-none flex flex-col items-center justify-center lg:items-start lg:justify-start px-5 md:px-10 py-14'>
-          <div className='md:text-9xl text-5xl font-semibold text-rose-300'>200+</div>
+          <div className='md:text-9xl text-5xl font-semibold text-rose-300'><AnimatedCounter value={200} direction="up" delay={0.9}/>+</div>
             <div className='mt-5'>
             <motion.p 
               variants={fadeIn_2("right",0.5)}
@@ -33,7 +34,7 @@ function Achieved() {
             </div>
           </div>
           <div className='lg:w-1/3 h-96 border rounded-3xl lg:rounded-none lg:border-l-0 lg:rounded-br-3xl lg:rounded-tr-3xl flex flex-col items-center justify-center lg:items-start lg:justify-start  px-5 md:px-10  py-14'>
-          <div className='md:text-9xl text-5xl font-semibold text-violet-300'>10+</div>
+          <div className='md:text-9xl text-5xl font-semibold text-violet-300'><AnimatedCounter value={10} direction="up" delay={0.8}/>+</div>
             <div className='mt-5'>
             <motion.p 
               variants={fadeIn_2("right",0.9)}
