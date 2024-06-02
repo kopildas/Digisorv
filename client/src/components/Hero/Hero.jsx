@@ -22,7 +22,7 @@ function Hero() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="archivo-black-regular mb-10 text-slate-300 text-4xl md:text-6xl lg:text-8xl lg:leading-[6.5rem]"
+          className="archivo-black-regular mb-10 text-slate-200 text-4xl md:text-6xl lg:text-8xl lg:leading-[6.5rem]"
         >
           Welcome to our <br /> digital <span className="bg-blue-500"><motion.span
           variants={fadeIn("up", 0.8)}
@@ -43,7 +43,7 @@ function Hero() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.9 }}
-            className="md:w-[50%] text-xs md:text-base lg:text-xl  bg-fuchsia-30 text-slate-400"
+            className="md:w-[50%] text-xs md:text-base lg:text-xl  bg-fuchsia-30 text-slate-300"
           >
             <p>
             At Digisorv, we transform your online presence with tailored web development, engaging content, and effective digital marketing strategies. Our passionate team is committed to helping your business thrive in the digital world.
