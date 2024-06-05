@@ -115,3 +115,20 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+
+/* for fancy text hover animation */
+.fancy-char-container span{
+  display:inline-block;
+  white-space: pre;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.fancy-char-container span:last-child{
+  position:absolute;
+  top: 100%;
+  width:100%;
+  left:0
+
+}
