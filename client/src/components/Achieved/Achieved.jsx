@@ -8,10 +8,11 @@ function Achieved() {
 
 
   return (
-    <div className='flex flex-col h-auto bg-zinc-400 px-5 lg:px-16 py-20 '>
-      <div className='bg-zinc-700 rounded-3xl md:rounded-[4rem] w-full h-full flex flex-col mt-[12rem] md:mt-10 lg:mt-10'>
-        <div className='flex items-center justify-center mt-20 archivo-black-regular text-zinc-300 font-extrabold lg:text-left text-center text-5xl md:text-7xl gap-5'>
-          <p className=''>What we <span></span></p>
+    <div className='flex flex-col h-auto bg-zinc-400 px-5 lg:px-16 md:py-20 py-16'
+    style={{backgroundImage:"radial-gradient(50% 50% at 50% 0%, #e1e8f8, #ffffff)"}}>
+      <div className='bg-zinc-700 rounded-3xl md:rounded-[4rem] w-full h-full flex flex-col  md:mt-10 lg:mt-10'>
+        <div className='flex flex-col md:flex-row items-center justify-center mt-20 archivo-black-regular text-zinc-300 font-extrabold lg:text-left text-center text-5xl md:text-7xl gap-5'>
+          <p className=''>What we</p>
           <FancyTextAnimation/>
         </div>
         <div className='flex flex-col lg:flex-row w-full h-auto p-5 md:p-20 mt-5 lg:mt-0 gap-5 lg:gap-0'>

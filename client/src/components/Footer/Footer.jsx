@@ -8,7 +8,7 @@ export const Footer = () => {
     style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
 >
     <div className='relative h-[calc(100vh+590px)] md:h-[calc(100vh+360px)] -top-[100vh]'>
-        <div className='h-[590px] md:h-[360px] sticky top-[calc(100vh-590px)] md:top-[calc(100vh-360px)] bg-red-300 flex items-end'>
+        <div className='h-[590px] md:h-[360px] sticky top-[calc(100vh-590px)] md:top-[calc(100vh-360px)] bg-red-00 flex items-end'>
             <Content />
         </div>
     </div>

@@ -5,6 +5,7 @@ import Achieved from "../../components/Achieved/Achieved";
 import Customer_Review from "../../components/Customer_Review/Customer_Review";
 import { Get_in_touch } from "../../components/Get_in_touch/Get_in_touch";
 import Transition from "../../components/Page_transition/Transition";
+import { TechUse } from "../../components/TechUse/TechUse";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <div className="">
         <Hero />
         <Services />
+        <TechUse/>
         <Achieved />
         <Customer_Review />
         <Get_in_touch />

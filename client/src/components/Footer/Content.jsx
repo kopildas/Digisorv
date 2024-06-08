@@ -5,7 +5,9 @@ import { FaGoogleDrive,FaInstagram,FaTwitter,FaFacebookF } from "react-icons/fa"
 
 function Content() {
   return (
-    <div className="w-full flex flex-col h-fit bg-zinc-300 md:px-[4rem] pt-16">
+    <div className="w-full flex flex-col h-fit bg-zinc-300 md:px-[4rem] pt-16"
+    style={{backgroundImage:"radial-gradient(100% 100% at 50% 100%, #e4e8ebb5, #b8c7df)"}}
+    >
       <div className="w-full h-fit md:h-56 mt-10 md:mt-0 flex flex-col md:flex-row md:items-center md:justify-between text-gray-900 gap-10 px-12 md:px-[4rem]">
         <motion.div
             variants={fadeIn("up", 0.5)}

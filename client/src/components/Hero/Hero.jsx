@@ -6,7 +6,8 @@ import { IoIosArrowRoundDown } from "react-icons/io";
 
 function Hero() {
   return (
-    <div className="h-screen bg-zinc-700 flex items-center justify-start  gap-3 md:gap-16 lg:gap-36 relative overflow-hidden">
+    <div className="h-screen bg-zinc-700 flex items-center justify-start  gap-3 md:gap-16 lg:gap-36 relative overflow-hidden"
+    style={{backgroundImage:"radial-gradient(100% 100% at 50% 0%, #b4c6f2, #ffffff)"}}>
       <motion.div
         variants={fadeIn("up", 0.2)}
         initial="hidden"
@@ -22,9 +23,9 @@ function Hero() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="archivo-black-regular mb-10 text-slate-200 text-4xl md:text-6xl lg:text-8xl lg:leading-[6.5rem]"
+          className="archivo-black-regular mb-10 text-zinc-600 text-4xl md:text-6xl lg:text-8xl lg:leading-[6.5rem]"
         >
-          Welcome to our <br /> digital <span className="bg-blue-500"><motion.span
+          Welcome to our <br /> digital <span className="bg-blue-400"><motion.span
           variants={fadeIn("up", 0.8)}
           initial={{ opacity: 0, y: -50 }}
           whileInView={"show"}
@@ -32,9 +33,9 @@ function Hero() {
         </motion.p>
         <div className="flex flex-col md:flex-row  md:gap-10 lg:gap-20">
           {/* round circle with text */}
-          <div className="lg:w-[135px] md:w-[120px] hidden md:flex items-center justify-center md:h-[120px] lg:h-[135px]  rounded-full bg-slate-300 relative ">
+          <div className="lg:w-[135px] md:w-[120px] hidden md:flex items-center justify-center md:h-[120px] lg:h-[135px]  rounded-full bg-white relative ">
             <img src="https://i.ibb.co/2Zrjw1H/inkpx-curved-text.png" alt="" className="text absolute p-2"/>
-            <div className="w-[5rem] h-[5rem] bg-blue-500 rounded-full flex items-center justify-center border border-zinc-800">
+            <div className="w-[5rem] h-[5rem] bg-blue-400 rounded-full flex items-center justify-center border border-zinc-800">
                 <IoIosArrowRoundDown className="text-6xl text-zinc-700 "/>
             </div>
           </div>
@@ -43,7 +44,7 @@ function Hero() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.9 }}
-            className="md:w-[50%] text-xs md:text-base lg:text-xl  bg-fuchsia-30 text-slate-300"
+            className="md:w-[50%] text-xs md:text-base lg:text-xl  bg-fuchsia-30 text-zinc-500"
           >
             <p>
             At Digisorv, we transform your online presence with tailored web development, engaging content, and effective digital marketing strategies. Our passionate team is committed to helping your business thrive in the digital world.
@@ -65,13 +66,15 @@ function Hero() {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.9 }}
           className="w-[71%] h-60 md:hidden md:h-96 bg-zinc-600  z-10 rounded-r-[15rem] bottom-0"
+          style={{backgroundImage:"radial-gradient(100% 100% at 50% 0%, #9db5f3, #ececed)"}}
         ></motion.div>
         <motion.div
           variants={springAnimation("right", 0.7)}
           initial={{ opacity: 0, x: -50 }}
           whileInView={"show"}
           viewport={{ once: false, amount: 0.9 }}
-          className="w-[71%] h-60 hidden md:block md:h-96 bg-zinc-600  z-10 rounded-r-[15rem] bottom-0"
+          className="w-[71%] h-60 hidden md:block md:h-96 bg-zinc-200  z-10 rounded-r-[15rem] bottom-0"
+          style={{backgroundImage:"radial-gradient(100% 100% at 50% 0%, #9db5f3, #ececed)"}}
         ></motion.div>
 
         {/* 2nd box */}
@@ -82,6 +85,7 @@ function Hero() {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.9 }}
           className="w-[80%] md:w-[15%] flex items-end h-60 md:h-96 md:hidden bg-zinc-500 z-10 rounded-l-[15rem] bottom-0"
+          style={{backgroundImage:"radial-gradient(100% 100% at 50% 0%, #9db5f3, #ececed)"}}
         ></motion.div>
         </div>
         <motion.div
@@ -90,6 +94,7 @@ function Hero() {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.9 }}
           className="w-[15%] h-60 md:h-96  hidden md:block bg-zinc-600 z-10 rounded-l-[15rem] bottom-0"
+          style={{backgroundImage:"radial-gradient(100% 100% at 50% 0%, #9db5f3, #ececed)"}}
         ></motion.div>
 
         {/* 3rd box */}
@@ -99,6 +104,7 @@ function Hero() {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.9 }}
           className="w-full h-60 md:h-96 bg-zinc-600 md:hidden  z-10 rounded-l-[15rem] bottom-0"
+          style={{backgroundImage:"radial-gradient(100% 100% at 50% 0%, #9db5f3, #ececed)"}}
         ></motion.div>
         <motion.div
           variants={springAnimation("right", 0.6)}
@@ -106,6 +112,7 @@ function Hero() {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.9 }}
           className="w-[14%] h-60 md:h-96  hidden md:block bg-zinc-600 z-10 rounded-l-[15rem] bottom-0"
+          style={{backgroundImage:"radial-gradient(100% 100% at 50% 0%, #9db5f3, #ececed)"}}
         ></motion.div>
       </div>
       {/* <RoundScrolling/> */}
