@@ -71,7 +71,15 @@
   width: 100%;
   /* height: 200px; */
   overflow: hidden;
-  background-color: #bbb;
+  /* background-color: #bbb; */
+  /* background-color: rgba(0, 69, 243, 0.342); */
+  background-color: transparent;
+  backdrop-filter: blur(60px);
+  background-image:  linear-gradient(
+    156deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(41, 74, 122, 0.2)
+  );
   text-align: center;
   position: relative;
 }
@@ -90,7 +98,16 @@
 
 .slide-down-delay .overlay{
   
-  background-color: rgba(117, 117, 117, 0.708);
+  /* background-color: rgba(117, 117, 117, 0.708); */
+  /* background-color: transparent; */
+  /* backdrop-filter: blur(20px); */
+  /* background-color: transparent;
+  backdrop-filter: blur(60px); */
+  background-image:  linear-gradient(
+    156deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(41, 74, 122, 0.2)
+  );
   line-height: 200px;
   color: #fff;
   transform: translateY(-100%);
