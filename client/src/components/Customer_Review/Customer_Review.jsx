@@ -37,7 +37,7 @@ trust our  customer</p>
         </div>
       </div>
       <div className="w-[20%] h-auto bg-red-00 hidden lg:block">
-      <img src="https://i.ibb.co/GVN6rSf/2391-removebg-preview.png" alt="" className="w-full h-full rounded-full object-cover"/>
+      <img src="https://i.ibb.co/TM77YNr/infoguy-02.png" alt="" className="w-full h-full rounded-full object-cover"/>
 
       </div>
     </div>
